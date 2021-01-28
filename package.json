@@ -1,0 +1,33 @@
+{
+  "name": "constructor",
+  "version": "0.0.1",
+  "description": "[BETA] Конструктор сайтов на чистом JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "wp-dev": "webpack-dev-server --mode development --open",
+    "wp-build": "webpack --mode production && node archiving.js",
+    "serve": "parcel ./src/index.html -p 4200 --open",
+    "build": "parcel build ./src/index.html --no-source-maps"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "constructor"
+  ],
+  "author": "Valentin Zolotov <astrotrain55@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "archiver": "^5.0.0",
+    "css-loader": "^4.2.1",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "parcel-bundler": "^1.12.4",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  }
+}
